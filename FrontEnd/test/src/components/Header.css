@@ -1,0 +1,27 @@
+.header {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 그림자 */ 
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 500;
+    background: #1864ab;
+    color: white;
+    height: 50px;
+}
+.button1 {
+    float: right;
+    width: 20;
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+}
+.small{
+    width: 50px;
+    border: none;   
+}
+.link {
+    color: white;
+}
+.link:hover {
+    color: white;
+}

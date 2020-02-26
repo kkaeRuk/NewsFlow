@@ -1,0 +1,56 @@
+.login {
+    background: white;
+    width: 450px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 그림자 */ 
+    margin: 0 auto; /* 페이지 중앙 정렬 */
+    margin-top: 5rem;
+    border: 1px solid #1864ab;
+  }
+  
+  .logintitle {
+    padding: 1rem;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+    height: 50px;
+    background: white;
+    color: black;
+  }
+  .labelid{
+      font-size:20px;
+      margin-left: 80px;
+  }
+  .labelpw{
+    font-size:20px;
+    margin-left: 69px;
+}
+.inputid{
+    font-size:20px;
+    width: 200px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    border:2px solid #1864ab;
+}
+.inputpw{
+    font-size:20px;
+    width: 200px;
+    margin-left: 100px;
+    border:2px solid #1864ab;
+}
+.bt1{
+    margin-top: 20px;
+    margin-left: 210px;
+    border: 1px solid #1864ab;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+}
+.OAuth{
+    margin-left: 120px;
+}
+.oauthLogin{
+    width: 200px;
+    border: none;
+    background-color: transparent !important;
+    background-repeat:no-repeat;
+}
