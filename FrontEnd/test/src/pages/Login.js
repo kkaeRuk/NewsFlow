@@ -1,9 +1,9 @@
 import React from 'react';
 import './Login.css';
 
-import Kakao from './kakao_account.png';
-import Naver from './naver_account.png';
-import Google from './google_account.png';
+import Kakao from '../image/kakao_account.png';
+import Naver from '../image/naver_account.png';
+import Google from '../image/google_account.png';
 
 const Login = () => {
     return (
