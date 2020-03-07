@@ -14,7 +14,7 @@ const Sidebar = () => (
                     <img className="sideImage" src={home} alt="home"/>
                 </NavIcon>
                 <NavText>
-                    <Link to="/" style={{ marginLeft:10, color: 'inherit', textDecoration: 'inherit'}}>홈</Link>
+                    홈
                 </NavText>
             </NavItem>
             <NavItem eventKey="charts">

@@ -8,19 +8,8 @@ import Sidebar from './components/Sidebar';
 //import TestTemplate from './components/testTemplate';
 
 class App extends Component {
-  state = {isSidebarExpaned: false}
 
-  handleToggle = (isSidebarExpaned) => {
-    if(isSidebarExpaned === false)
-      this.setState({isSidebarExpaned: true});
-    else
-      this.setState({isSidebarExpaned: false});
-  };
   render(){
-    const {isSidebarExpaned} = this.state;
-    const {
-      handleToggle
-    } = this;
     return (
       <div>
         <Header/>
