@@ -27,7 +27,7 @@ public class KakaoUserController {
     public String loginGET(@RequestParam("code") String code, HttpSession session) {
         String access_Token = kakao.getAccessToken(code);
         HashMap<String, Object> userInfo = kakao.getUserInfo(access_Token);
-        // System.out.println("userInfo : " + userInfo);
+         System.out.println("userInfo : " + userInfo);
         if (userInfo.get("nickname") != null) {
             session.setAttribute("userId", userInfo.get("nickname"));
             session.setAttribute("access_Token", access_Token);

@@ -8,7 +8,7 @@
     </head>
     <body>
         <c:if test="${userId eq null}">
-            <a href="https://kauth.kakao.com/oauth/authorize?client_id=d6c50ddf594dc4fbfa454767e6a88cb2&redirect_uri=http://localhost:8080/user/kakao/login&response_type=code"><img src="/img/kakao_account_login_btn_medium_narrow.png"></a>
+            <a href="https://kauth.kakao.com/oauth/authorize?client_id=d6c50ddf594dc4fbfa454767e6a88cb2&redirect_uri=http://localhost:8080/login/oauth2/code/kakao&response_type=code"><img src="/img/kakao_account_login_btn_medium_narrow.png"></a>
         </c:if>
         <c:if test="${userId ne null}">
             <h1>${userId} 로그인성공</h1>
