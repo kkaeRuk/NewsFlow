@@ -23,16 +23,15 @@ import static com.example.newsflow.security.SocialType.*;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {  // 스프링시큐리티 설정
+
+    // 매칭 URL 정의
     @Override
     public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests()
                 .antMatchers("/", "/oauth2/**", "/login/**", "/css/**", "/images/**", "/js/**", "/console/**", "/favicon.ico/**", "/swagger-ui.html")
                 .permitAll()
-                .antMatchers("/facebook").hasAuthority(FACEBOOK.getRoleType())
-                .antMatchers("/google").hasAuthority(GOOGLE.getRoleType())
                 .antMatchers("/kakao").hasAuthority(KAKAO.getRoleType())
-                .antMatchers("/naver").hasAuthority(NAVER.getRoleType())
                 .anyRequest().authenticated()
             .and()
                 .oauth2Login()
@@ -51,10 +50,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public ClientRegistrationRepository clientRegistrationRepository(
             OAuth2ClientProperties oAuth2ClientProperties,
-            @Value("d6c50ddf594dc4fbfa454767e6a88cb2") String kakaoClientId,
-            @Value("${custom.oauth2.kakao.client-secret}") String kakaoClientSecret,
-            @Value("${custom.oauth2.naver.client-id}") String naverClientId,
-            @Value("${custom.oauth2.naver.client-secret}") String naverClientSecret) {
+            @Value("d6c50ddf594dc4fbfa454767e6a88cb2") String kakaoClientId) {
 
         List<ClientRegistration> registrations = oAuth2ClientProperties
                 .getRegistration().keySet().stream()
@@ -64,11 +60,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         registrations.add(CustomOAuth2Provider.KAKAO.getBuilder("kakao")
                 .clientId(kakaoClientId)
-                .clientSecret(kakaoClientSecret)
-                .jwkSetUri("temp").build());
-        registrations.add(CustomOAuth2Provider.NAVER.getBuilder("naver")
-                .clientId(naverClientId)
-                .clientSecret(naverClientSecret)
                 .jwkSetUri("temp").build());
         return new InMemoryClientRegistrationRepository(registrations);
     }

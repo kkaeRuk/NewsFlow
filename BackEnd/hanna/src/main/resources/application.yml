@@ -10,16 +10,13 @@ spring:
       client:
         registration:
           google:
-            client-id: 958180173202-sii4epowero1eouvvjrlrnt27sikub08k.apps.googleusercontent.com
-            client-secret: k0asdfag801WdcJF8k9ST_8SG9
+            client-id: 000  #더미데이터
+            client-secret: 000  #더미데이터
           facebook:
-            client-id: 11612612521462
-            client-secret: 6578235217c5c365a98c51b02d0308ac
+            client-id: 000  #더미데이터
+            client-secret: 000  #더미데이터
     custom:
       oauth2:
         kakao:
-          client-id: d6c50ddf594dc4fbfa454767e6a88cb2
-          client-secret: jpXULoEzrasfawegsqYXlRLyyOHn2i60q
-        naver:
-          client-id: B5yvH3Zaweyawerawwe6repj4z0L
-          client-secret: sArXFasdfawef
+          client-id: d6c50ddf594dc4fbfa454767e6a88cb2        #앱 REST API 키
+          client-secret: 000  #더미데이터

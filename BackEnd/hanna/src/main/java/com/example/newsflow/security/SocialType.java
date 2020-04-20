@@ -1,7 +1,9 @@
 package com.example.newsflow.security;
 
 public enum SocialType {
-    FACEBOOK("facebook"), GOOGLE("google"), KAKAO("kakao"), NAVER("naver");
+
+    KAKAO("kakao");
+
     private final String ROLE_PREFIX = "ROLE_";
     private String name;
 
