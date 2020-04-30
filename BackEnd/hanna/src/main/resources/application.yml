@@ -1,0 +1,22 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /console
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 000  #더미데이터
+            client-secret: 000  #더미데이터
+          facebook:
+            client-id: 000  #더미데이터
+            client-secret: 000  #더미데이터
+    custom:
+      oauth2:
+        kakao:
+          client-id: d6c50ddf594dc4fbfa454767e6a88cb2        #앱 REST API 키
+          client-secret: 000  #더미데이터
