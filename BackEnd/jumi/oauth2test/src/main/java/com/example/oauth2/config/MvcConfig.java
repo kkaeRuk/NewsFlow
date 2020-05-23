@@ -1,4 +1,4 @@
-package com.example.oauth2;
+package com.example.oauth2.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
